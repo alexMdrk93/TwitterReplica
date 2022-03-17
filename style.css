@@ -1,0 +1,250 @@
+*, *::before, *::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container
+{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    min-height: 95vh;
+}
+
+.logoContainer
+{
+    display: flex;
+    background-image: url(bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    flex-basis: auto;
+    min-width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer__svg
+{
+    width: 300px;
+    height: 300px;
+}
+
+.main
+{
+    background-color: black;
+    color: white;
+    flex-basis: auto;
+    min-width: 50%;
+    min-height: 45vh;
+    padding: 36px;
+}
+
+.mainContainer{
+    padding-top: 40px;
+}
+
+.mainContainer__logoSmall
+{
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+.mainContainer__heading1
+{
+    font-size:64px;
+    font-weight: 800;
+    margin: 40px 0;
+    color: rgb(217, 217, 217);
+}
+
+.mainContainer__heading2
+{
+    font-size: 36px;
+    margin: 30px 0;
+    color: rgb(217, 217, 217);
+}
+
+.mainContainer__buttonContainer
+{
+    display: grid;
+}
+
+.mainContainer__buttonContainer__google
+{
+    display: flex;
+    border-radius: 40px;
+    height: 40px;
+    width: 300px;
+    align-items:center;
+    justify-content: center;
+    border: 0 solid black;
+    margin-bottom: 5px;
+}
+
+.googleLogo
+{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+
+.appleLogo
+{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+
+.mainContainer__buttonContainer__apple
+{
+    display: flex;
+    border-radius: 40px;
+    height: 40px;
+    width: 300px;
+    align-items:center;
+    justify-content: center;
+    font-weight: 600;
+    border: 0 solid black;
+    margin-bottom: 5px;
+}
+
+.wrapperContainer
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+
+.wrapperContainer__left
+{
+    height: 1px;
+    width: 43%;
+    background-color: rgb(47, 51, 54);
+}
+
+.wrapperContainer__or
+{
+    margin: 0 8px;
+    color: rgb(217, 217, 217);
+}
+
+.wrapperContainer__right
+{
+    height: 1px;
+    width: 43%;
+    background-color: rgb(47, 51, 54);
+}
+
+.mainContainer__buttonContainer__email
+{
+    display: flex;
+    border-radius: 40px;
+    height: 40px;
+    width: 300px;
+    align-items:center;
+    justify-content: center;
+    font-weight: 600;
+    background-color: #1d9bf0;
+    color: white;
+    border: 0 solid black;
+    margin: 5px 0;
+}
+
+.mainContainer__buttonContainer__terms
+{
+    font-size: 11px;
+    font-weight: 400;
+    color: rgb(110, 118, 125);
+    width: 300px;
+    overflow-wrap: break-word;
+    margin-bottom: 20px;
+}
+
+.mainContainer__buttonContainer__terms__link
+{
+    text-decoration: none;
+    color: rgb(29, 155, 240);
+}
+
+.mainContainer__signIn
+{
+    margin-top: 40px;
+}
+
+.mainContainer__signIn__haveAcc
+{
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(217, 217, 217);
+    margin-bottom: 20px;
+}
+
+.mainContainer__signIn__button
+{
+    display: flex;
+    border-radius: 40px;
+    height: 40px;
+    width: 300px;
+    align-items:center;
+    justify-content: center;
+    font-weight: 600;
+    color: #1d9bf0;
+    background-color: black;
+    border-color: rgb(110, 118, 125);
+    border-width: 1px;
+    border-style: solid;
+    margin: 5px 0;
+}
+
+.footerContainer
+{
+    background-color: black;
+    width: auto;
+}
+
+.footerContainer__list
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px 16px;
+    list-style-type: none;
+}
+
+.footerContainer__link
+{
+    text-decoration: none;
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    padding-right: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width: 1016px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        min-width: auto;
+    }
+    .logoContainer{
+        min-height: 45vh;
+    }
+    .mainContainer{
+        max-width: 600px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mainContainer__heading1{
+        overflow-wrap: break-word;
+    }
+}
